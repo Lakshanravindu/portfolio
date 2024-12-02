@@ -370,15 +370,8 @@ ol {
 .header__nav__social {
   display: inline-block;
   position: relative;
-  padding-left: 5px;
-  
+  padding-left: 50px;
 }
-
-ion-icon {
-  font-size: 24px;
-  color: lightyellow;
-}
-
 .header__nav__social:before {
   position: absolute;
   left: 0;
@@ -868,7 +861,7 @@ ion-icon {
 }
 
 .footer__top__social {
-  text-align: center;
+  text-align: right;
 }
 .footer__top__social a {
   display: inline-block;
@@ -876,6 +869,7 @@ ion-icon {
   color: #ffffff;
   height: 40px;
   width: 40px;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   line-height: 44px;
   text-align: center;
@@ -1796,6 +1790,9 @@ ion-icon {
     margin-right: 25px;
   }
 
+  .header__nav__social {
+    padding-left: 25px;
+  }
 
   .counter__item::before {
     display: none;
@@ -2167,6 +2164,93 @@ ion-icon {
 /*---------------------
   Youtube
 -----------------------*/
+
+.youtube {
+	padding-bottom: 50px;
+  background: #100028;
+}
+
+.youtube .section-title {
+	text-align: center;
+}
+
+.youtube .section-title h1 {
+	font-size: 90px;
+}
+
+.youtube__item {
+	-webkit-transition: all, 0.3s;
+	-o-transition: all, 0.3s;
+	transition: all, 0.3s;
+	margin-bottom: 30px;
+}
+
+.youtube__item:hover {
+	-webkit-box-shadow: 0px 3px 30px rgba(22, 41, 124, 0.1);
+	box-shadow: 0px 3px 30px rgba(22, 41, 124, 0.1);
+}
+
+.youtube__item__pic {
+	height: 240px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.youtube__item__pic .play-btn {
+	font-size: 16px;
+	color: #5c00ce;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.3);
+	display: inline-block;
+	line-height: 60px;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+
+.youtube__item__pic .play-btn i {
+	position: relative;
+	top: 2px;
+	left: 2px;
+}
+
+.youtube__item__pic .play-btn:after {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	height: 40px;
+	width: 40px;
+	background: #ffffff;
+	border-radius: 50%;
+	content: "";
+	z-index: -1;
+}
+
+.youtube__item__text {
+	padding: 25px 30px 20px 20px;
+	background: lightblue;
+}
+
+.youtube__item__text h4 {
+	font-size: 26px;
+	color: #111111;
+	line-height: 34px;
+	font-weight: 700;
+}
+
+
+/*---------------------
+  Youtube
+-----------------------*/
 .youtube {
   padding-bottom: 30px;
   background: #100028;
@@ -2222,30 +2306,11 @@ ion-icon {
       background: rgba(255, 255, 255, 1);
     }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px; /* Add spacing between rows */
-}
 
-.col-lg-4, .col-md-6, .col-sm-6 {
-  flex: 1 1 calc(100% - 30px); /* Make items stack on smaller screens */
-}
 
-@media (min-width: 576px) {
-  .col-sm-6 {
-    flex: 1 1 calc(50% - 30px); /* Two columns on small devices */
-  }
-}
 
-@media (min-width: 768px) {
-  .col-md-6 {
-    flex: 1 1 calc(50% - 30px); /* Two columns on medium devices */
-  }
-}
 
-@media (min-width: 992px) {
-  .col-lg-4 {
-    flex: 1 1 calc(33.33% - 30px); /* Three columns on large devices */
-  }
-}
+
+
+
+
