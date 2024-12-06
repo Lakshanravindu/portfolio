@@ -1277,7 +1277,7 @@ ol {
   font-weight: 300;
   margin-right: 24px;
   position: relative;
-  color: #adadad;
+  color: white;
 }
 .portfolio__item__text ul li:after {
   position: absolute;
